@@ -1,9 +1,7 @@
 package main
 
-import (
-	"github.com/tobnys/proxy/cmd"
-)
+import root "github.com/tobnys/proxy/cmd"
 
 func main() {
-	cmd.Execute()
+	root.Execute()
 }
