@@ -1,5 +1,7 @@
 package main
 
+import "github.com/tobnys/proxy/internal"
+
 func main() {
-	action.Execute()
+	internal.Execute()
 }

@@ -1,8 +1,5 @@
-module github.com/tobnys/proxy
+module github.com/tobnys/ba-test
 
 go 1.13
 
-require (
-	github.com/spf13/cobra v0.0.5 // indirect
-	github.com/spf13/pflag v1.0.5 // indirect
-)
+require github.com/tobnys/proxy v0.0.0-20191008191727-01878b550c75 // indirect
