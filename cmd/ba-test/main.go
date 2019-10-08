@@ -1,7 +1,7 @@
 package main
 
-import "github.com/tobnys/proxy/internal"
+import cmd "github.com/tobnys/ba-test/commands"
 
 func main() {
-	internal.Execute()
+	cmd.Execute()
 }
