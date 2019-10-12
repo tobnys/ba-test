@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
+	"github.com/tobnys/ba-test/worker"
 )
 
 func init() {
@@ -15,10 +16,11 @@ var execCmd = &cobra.Command{
 	Short: "Executes the program",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) == 0 {
-			fmt.Println("No arguments specified, exiting...")
 			fmt.Println("USAGE: bat exec [TARGET URL]")
 		} else {
-			fmt.Printf("EXECUTING WITH ARGS: %s...", args)
+			fmt.Printf("EXECUTING WITH ARGS: %s... \n", args)
+			worker := worker.InitWorker()
+			fmt.Println(worker)
 		}
 	},
 }
