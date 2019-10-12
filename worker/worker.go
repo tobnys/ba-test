@@ -33,6 +33,7 @@ func InitWorker() selenium.WebDriver {
 
 	caps := selenium.Capabilities{"browsername": "chrome"}
 	wd, err := selenium.NewRemote(caps, fmt.Sprintf("http://localhost:%d/wd/hub", port))
+	// FIX THIS
 	if err := nil {
 		panic(err)
 	}
